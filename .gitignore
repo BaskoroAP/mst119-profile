@@ -1,0 +1,54 @@
+# WordPress core (keep tracked if this repo contains core)
+# If you deploy WordPress core separately, consider ignoring these folders instead.
+
+# Sensitive / environment-specific configuration
+wp-config.php
+wp-config-local.php
+
+# Local server / tooling
+.env
+.env.*
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+error_log
+php_errorlog
+debug.log
+
+# WordPress: user uploads and generated content
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup*/
+wp-content/backups/
+wp-content/ai1wm-backups/
+
+# WordPress cache / optimization plugins (generated files)
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/wp-cache-config.php
+wp-content/w3tc-config/
+
+# (Optional) Ignore language packs downloaded by WordPress
+wp-content/languages/
+
+# Build artifacts inside themes/plugins
+wp-content/themes/**/node_modules/
+wp-content/themes/**/dist/
+wp-content/themes/**/build/
+wp-content/plugins/**/node_modules/
+wp-content/plugins/**/vendor/
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
